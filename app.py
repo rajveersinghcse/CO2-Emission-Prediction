@@ -16,9 +16,12 @@ with st.sidebar:
 
 # Load the vehicle dataset
 df = pd.read_csv('co2 Emissions.csv')
-df_new = df[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)','CO2 Emissions(g/km)']]
+#droping natural gas
+df_natural = df[df["Fuel Type"].str.contains("N") == False].reset_index()
+del df_natural['index']
 
-# we have to remove outliers from our data
+# # we have to remove outliers from our data
+df_new = df_natural[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)','CO2 Emissions(g/km)']]
 df_new_model = df_new[(np.abs(stats.zscore(df_new)) < 1.9).all(axis=1)]
 
 
@@ -132,6 +135,19 @@ if user_input == 'Visulization':
     plt.ylabel("Cars")
     plt.bar_label(figure7.containers[0])
     st.pyplot(fig7)
+    st.text("We have only one data of Natural Gas. So we can Predicate anything by using only one data. That's why we have to drop this row.")
+    
+    # removing natural Gas------------------
+    st.subheader('After removing Natural Gas data')
+    df_new_fuel_type = df_natural['Fuel Type'].value_counts().reset_index().rename(columns={'count':'Count'})
+    
+    fig8 = plt.figure(figsize=(20,5))
+    figure8 = sns.barplot(data = df_new_fuel_type, x = "Fuel Type",  y= "Count")
+    plt.title("All Fuel Types")
+    plt.xlabel("Fuel Types")
+    plt.ylabel("Cars")
+    plt.bar_label(figure8.containers[0])
+    st.pyplot(fig8)
 
     
     # CO2 Emission variation with Brand ------------------------------------------------------------------------
