@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 
 # Load the vehicle dataset
 df = pd.read_csv('co2 Emissions.csv')
@@ -10,7 +11,7 @@ X = df[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)']]
 y = df['CO2 Emissions(g/km)']
 
 # Train the linear regression model
-model = LinearRegression()
+model = RandomForestRegressor()
 model.fit(X, y)
 
 # Create the Streamlit web app
