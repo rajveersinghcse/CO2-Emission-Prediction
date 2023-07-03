@@ -19,11 +19,8 @@ df = pd.read_csv('co2 Emissions.csv')
 df_new = df[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)','CO2 Emissions(g/km)']]
 
 # we have to remove outliers from our data
-df_model = df_new[(np.abs(stats.zscore(df_new)) < 1.9).all(axis=1)]
+df_new_model = df_new[(np.abs(stats.zscore(df_new)) < 1.9).all(axis=1)]
 
-
-# st.write(len(df_model))
-# to check total number of values in our data set after removing outliers
 
 #-----------------------------Visulization----------------------------------
 if user_input == 'Visulization':
@@ -147,7 +144,7 @@ if user_input == 'Visulization':
     plt.title("CO2 Emissions variation with Brand")
     plt.xlabel("Brands")
     plt.ylabel("CO2 Emissions(g/km)")
-    plt.bar_label(figure8.containers[0], fontsize=7, fmt='%.1f')
+    plt.bar_label(figure8.containers[0], fontsize=8, fmt='%.1f')
     st.pyplot(fig8)
 
     #  CO2 Emissions variation with Vehicle Class  ------------------------------------------------------------------------
@@ -159,7 +156,7 @@ if user_input == 'Visulization':
     plt.title("CO2 Emissions variation with Vehicle Class")
     plt.xlabel("Vehicle Class")
     plt.ylabel("CO2 Emissions(g/km)")
-    plt.bar_label(figure9.containers[0], fontsize=7)
+    plt.bar_label(figure9.containers[0], fontsize=9)
     st.pyplot(fig9)
 
     
@@ -172,7 +169,7 @@ if user_input == 'Visulization':
     plt.title("CO2 Emissions variation with Transmission")
     plt.xlabel("Transmission")
     plt.ylabel("CO2 Emissions(g/km)")
-    plt.bar_label(figure10.containers[0], fontsize=7)
+    plt.bar_label(figure10.containers[0], fontsize=10)
     st.pyplot(fig10)
 
     
@@ -185,7 +182,7 @@ if user_input == 'Visulization':
     plt.title("CO2 Emissions variation with Fuel Type")
     plt.xlabel("Fuel Type")
     plt.ylabel("CO2 Emissions(g/km)")
-    plt.bar_label(figure11.containers[0], fontsize=7)
+    plt.bar_label(figure11.containers[0], fontsize=10)
     st.pyplot(fig11)
 
     
@@ -213,28 +210,41 @@ if user_input == 'Visulization':
     plt.title('CO2 Emissions(g/km)')
     st.pyplot()
 
+    # Outliers ---------------------------------------------------------------------
+    st.text("As we can see there are some outliers present in our Dataset")
+    st.subheader("After removing outliers")
+    st.write("Before removing ouliers we have",len(df),"data")
+    st.write("After removing ouliers we have",len(df_new_model),"data")
 
-
-    st.header("There are some Outliers ")
-    # Brands of Cars ---------------------------------------------------------------------
-    df_brand = df['Make'].value_counts().reset_index().rename(columns={'count':'Count'})
-    df_brand.head(20)
-    fig = plt.figure(figsize=(15, 6))
-    figure1 = sns.barplot(data = df_brand, x = "Make",  y= "Count")
-    plt.xticks(rotation = 75)
-    plt.bar_label(figure1.containers[0])
-    plt.title("All Car Companies and their Cars")
-    plt.xlabel("Companies")
-    plt.ylabel("Cars")
-    st.pyplot(fig)
+    
+    # Creating new box-plots-------------------------------------------------------------
+    st.subheader("Boxplot after removing outliers")
+    plt.figure(figsize=(20,10))
+    #Plot 1
+    plt.subplot(2,2,1)
+    plt.boxplot(df_new_model['Engine Size(L)'])
+    plt.title('Engine Size(L)')
+    #Plot 2
+    plt.subplot(2,2,2)
+    plt.boxplot(df_new_model['Cylinders'])
+    plt.title('Cylinders')
+    #Plot 3
+    plt.subplot(2,2,3)
+    plt.boxplot(df_new_model['Fuel Consumption Comb (L/100 km)'])
+    plt.title('Fuel Consumption Comb (L/100 km)')
+    #Plot 4
+    plt.subplot(2,2,4)
+    plt.boxplot(df_new_model['CO2 Emissions(g/km)'])
+    plt.title('CO2 Emissions(g/km)')
+    st.pyplot()
 
 
 
 
 else:
     # Prepare the data for modeling
-    X = df_model[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)']]
-    y = df_model['CO2 Emissions(g/km)']
+    X = df_new_model[['Engine Size(L)','Cylinders','Fuel Consumption Comb (L/100 km)']]
+    y = df_new_model['CO2 Emissions(g/km)']
 
     # Train the linear regression model
     model = RandomForestRegressor()
