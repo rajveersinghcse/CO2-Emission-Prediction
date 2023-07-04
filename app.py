@@ -1,3 +1,4 @@
+# Importing libraries-----------------------------------------------------------------------------------------
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -6,7 +7,7 @@ import numpy as np
 from scipy import stats
 from sklearn.ensemble import RandomForestRegressor
 
-
+# Creating Sidebar-------------------------------------------------------------------------------------------
 with st.sidebar:
     st.markdown("# CO2 Emissions by Vehical")
     user_input = st.selectbox('Please select',('Visulization','Model'))
@@ -123,7 +124,7 @@ if user_input == 'Visulization':
     plt.ylabel("Cars")
     plt.bar_label(plt.gca().containers[0])
     st.pyplot(fig7)
-    st.text("We have only one data of Natural Gas. So we cant Predicate anything by using only one data. That's why we have to drop this row.")
+    st.text("We have only one data on natural gas. So we cannot predict anything using only one data. That's why we have to drop this row.")
     st.write(df_fuel_type)
 
     # Removing Natural Gas-----------------------------------------------------------------------------------
