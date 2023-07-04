@@ -230,3 +230,4 @@ else:
 
     # Display the prediction---------------------------------------------------------------------------
     st.write(f'Predicted CO2 Emissions: {predicted_co2[0]:.2f} g/km')
+
