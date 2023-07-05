@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 # Creating Sidebar-------------------------------------------------------------------------------------------
 with st.sidebar:
-    st.markdown("# CO2 Emissions by Vehical")
+    st.markdown("# CO2 Emissions by Vehicle")
     user_input = st.selectbox('Please select',('Visulization','Model'))
 
 # Load the vehicle dataset
