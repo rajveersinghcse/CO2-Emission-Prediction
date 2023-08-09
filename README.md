@@ -12,11 +12,9 @@
 <h3><b>Business Objective of the project</b></h3>
 
 - The fundamental goal here is to model the CO2 emissions as a function of several car engine features.
-
 - We have to use the data to estimate how much CO2 a car will emit.
 
 # Description of The Data?
-
 - I collected this data from the Canadian Government's Official [website](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6).
 
 # About Data 📈 
