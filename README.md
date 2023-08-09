@@ -67,7 +67,7 @@ pip install -r requirements.txt
 - For the model building part, we used LR (Linear Regression), Random Forest, KNN, and SVR models.
 
 - I was getting more accuracy in Random Forest than in other models. So I decided to use the RF model in my deployment program or main project.
-<img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_model.png" alt="ModelBuilding">
+<img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_Model.png" alt="ModelBuilding">
 
 # Cloud version of this project.
 - I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-co2emissionsprediction.streamlit.app/)
