@@ -1,11 +1,11 @@
-import pandas as pd
+# Importing libraries-----------------------------------------------------------------------------------------
+import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
-import yfinance as yf
-import datetime
-import streamlit as st
-import model_building as m
-
+import pandas as pd
+import numpy as np
+from scipy import stats
+from sklearn.ensemble import RandomForestRegressor
 
 with st.sidebar:
     st.markdown("# Reliance Stock Market Prediction")
