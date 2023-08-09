@@ -3,7 +3,7 @@
 
 # CO2 Emissions by Cars Predictions 
 
-![Banner](https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_Emissions.jpg)
+![Banner](https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_emissions.jpg)
 
 <h3>Hey Folks,👨🏻‍💻</h3>
 <p>I have created a <b>Stock Market Price Prediction</b> project that can predict the stock price of any company for the next 30 days. Here I used the last 7 years' data of Reliance Industries Limited. I did this project during my internship</p>
