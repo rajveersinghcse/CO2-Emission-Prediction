@@ -13,15 +13,15 @@
 
 - Predict the Reliance Industries Stock Price for the next 30 days.
 
-- There are Open, High, Low and Close prices that you need to obtain from the web for each day starting from 2015 to 2022 for Reliance Industries stock.
+- There are Open, High, Low, and Close prices that you need to obtain from the web for each day starting from 2015 to 2022 for Reliance Industries stock.
 
 - Split the last year into a test set- to build a model to predict stock price.
 
-- Find short term, & long term trends.
+- Find short-term, & long-term trends.
 
-- Understand how it is impacted from external factors or any big external events.
+- Understand how it is impacted by external factors or any big external events.
 
-- Forecast for next 30 days.
+- Forecast for the next 30 days.
 
 # How to collect the Data?
 
@@ -35,9 +35,9 @@
 
 - Open: Opening Price of Stock
 
-- High: Highest price of stock on that day
+- High: The highest price of the stock on that day
 
-- Low: Lowest price of stock on that day
+- Low: Lowest price of the stock on that day
 
 - Close: Close price adjusted for splits.
 
@@ -46,7 +46,7 @@
 - Volume: Volume of stock on that day
 
 
-# Libraries that i used in the project. 
+# Libraries that I used in the project. 
 <img height="25" width="80" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"> <img height="25" width="70" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"> <img height="25" width="80" src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"> <img height="25" width="70" src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"> <img height="25" width="110" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"> <img height="25" width="100" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white"> <img height="25" width="70" src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white"> <img height="25" width="90" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"> 
 
 
@@ -56,25 +56,25 @@
 
 - It can install all the libraries in your system which I have used in my project. 
 
-- You will need Python in your system to use this command. You can use this given link to install python in your system : [Python](https://www.python.org/downloads/)
+- You will need Python in your system to use this command. You can use this given link to install Python in your system : [Python](https://www.python.org/downloads/)
 
-- After installation of python, you need to run this command in your command prompt.
+- After installation of Python, you need to run this command in your command prompt.
 
 ```bash
 pip install -r requirements.txt 
 ```
 # Model Building.
-- For model building part, we used SVR, Random Forest, KNN, LSTM, and GRU models.
+- For the model building part, we used SVR, Random Forest, KNN, LSTM, and GRU models.
 
 - I was getting more accuracy in LSTM than in other models. So I decided to use the LSTM model in my deployment program or main project.
 <img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/ModelBuilding.png" alt="ModelBuilding">
 
-# Cloud Version of this project.
+# Cloud version of this project.
 - I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-reliance-stock-market-prediction-app-0xijl8.streamlit.app/)
 
 
 # How to deploy the project?
-- We used Streamlit library for the deployment part of this project. To deploy or run this project in your local system, you must run this command in your command prompt.
+- We used the Streamlit library for the deployment part of this project. To deploy or run this project in your local system, you must run this command in your command prompt.
 ```bash
 streamlit run app.py 
 ```
