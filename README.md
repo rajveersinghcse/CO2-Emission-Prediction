@@ -64,13 +64,13 @@
 pip install -r requirements.txt 
 ```
 # Model Building.
-- For the model building part, we used SVR, Random Forest, KNN, LSTM, and GRU models.
+- For the model building part, we used LR (Linear Regression), Random Forest, KNN, and SVR models.
 
-- I was getting more accuracy in LSTM than in other models. So I decided to use the LSTM model in my deployment program or main project.
-<img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/ModelBuilding.png" alt="ModelBuilding">
+- I was getting more accuracy in Random Forest than in other models. So I decided to use the RF model in my deployment program or main project.
+<img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_model.png" alt="ModelBuilding">
 
 # Cloud version of this project.
-- I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-reliance-stock-market-prediction-app-0xijl8.streamlit.app/)
+- I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-co2emissionsprediction.streamlit.app/)
 
 
 # How to deploy the project?
