@@ -5,3 +5,4 @@ pandas
 numpy
 scipy
 scikit-learn
+- e.
