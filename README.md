@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 # Running the Project:
 
-- To run the project locally, one can install the required libraries using the provided command in the command prompt. The Streamlit command "streamlit run app.py" can then be used to launch the application.
+- To run the project locally, one can install the required libraries using the provided command in the command prompt. Use the below Streamlit command to launch the application.
 ```bash
 streamlit run app.py 
 ```
