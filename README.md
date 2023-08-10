@@ -9,6 +9,7 @@
 <p>During my internship, I created a project titled <b>"CO2 Emission Prediction by Cars."</b> The goal was to predict how much carbon dioxide (CO2) a car would emit based on its data. I gathered information about different cars and their CO2 emissions. Using this data, I used advanced techniques to build a model that could accurately estimate CO2 emissions. This project not only showcased my skills in data analysis and machine learning but also aimed to contribute to understanding and reducing vehicle-related environmental impacts.</p>
 
 # Description of The Project:
+
 <h3><b>Business Objective of the project</b></h3>
 
 - The primary objective of the project is to develop a model that can accurately predict CO2 emissions based on different engine features of cars. 
@@ -19,6 +20,7 @@
 - The data used in the project was collected from the Canadian Government's Official [Website](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6).
 
 ## About Data 📈 
+
 ### It includes the following attributes:
 
 - <b>Make:</b> Car brand under study.
@@ -36,6 +38,7 @@
 
 
 # Tools and Technologies:
+
 #### The project was developed using various tools and technologies, including:
 <img height="25" width="80" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"> <img height="25" width="70" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"> <img height="25" width="80" src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black"> <img height="25" width="70" src="https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white"> <img height="25" width="110" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"> <img height="25" width="90" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white"> 
 - Python programming language
@@ -45,7 +48,6 @@
 
 
 ## How to install these libraries?
-
 ### You can install these libraries by using the command.
 
 - You can install all the libraries in your system which I have used in my project by using only one command. 
@@ -63,8 +65,8 @@ pip install -r requirements.txt
 
 # Deployment:
 
-- The project was deployed using Streamlit, allowing users to interact with the model and make predictions on CO2 emissions based on car engine features. The deployment version of the project can be accessed through a provided link.
-- I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-co2emissionsprediction.streamlit.app/)
+- The project was deployed using Streamlit, allowing users to interact with the model and make predictions on CO2 emissions based on car engine features.
+- The deployment version of the project can be accessed through a provided link :[Project](https://rajveersinghcse-co2emissionsprediction.streamlit.app/)
 
 # Running the Project:
 
