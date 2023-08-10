@@ -6,7 +6,7 @@
 ![Banner](https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_emissions.jpg)
 
 <h3>Hey Folks,👨🏻‍💻</h3>
-<p>I have created a project for <b>"CO2 Emission Prediction by Cars" </b>that can predict the CO2 emission of a vehicle. Here I used the CO2 emission data of the car. I used that data to estimate how much CO2 a car is going to emit. I did this project during my internship.</p>
+<p>During my internship, I created a project titled <b>"CO2 Emission Prediction by Cars."</b> The goal was to predict how much carbon dioxide (CO2) a car would emit based on its data. I gathered information about different cars and their CO2 emissions. Using this data, I used advanced techniques to build a model that could accurately estimate CO2 emissions. This project not only showcased my skills in data analysis and machine learning but also aimed to contribute to understanding and reducing vehicle-related environmental impacts.</p>
 
 # Description of The Project:
 <h3><b>Business Objective of the project</b></h3>
