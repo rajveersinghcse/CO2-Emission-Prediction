@@ -12,7 +12,6 @@
 <h3><b>Business Objective of the project</b></h3>
 
 - The primary objective of the project is to develop a model that can accurately predict CO2 emissions based on different engine features of cars. 
-
 - The goal is to estimate the amount of CO2 a car will emit using the provided data.
 
 # Description of The Data:
@@ -50,25 +49,25 @@
 ### You can install these libraries by using the command.
 
 - It can install all the libraries in your system which I have used in my project. 
-
 - You will need Python in your system to use this command. You can use this given link to install Python in your system : [Python](https://www.python.org/downloads/)
-
 - After installation of Python, you need to run this command in your command prompt.
 
 ```bash
 pip install -r requirements.txt 
 ```
-# Model Building.
+# Model Building:
+
 - The project involved building and evaluating several machine learning models, including Linear Regression, Random Forest, KNN, and SVR.
 - The Random Forest model yielded the highest accuracy among these models and was selected for deployment.
 <img height="170" width="350" src="https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_Model.png" alt="ModelBuilding">
 
 # Deployment:
+
 - The project was deployed using Streamlit, allowing users to interact with the model and make predictions on CO2 emissions based on car engine features. The deployment version of the project can be accessed through a provided link.
 - I deploy this project on the cloud you can check it out at this link: [Project](https://rajveersinghcse-co2emissionsprediction.streamlit.app/)
 
-
 # Running the Project:
+
 - To run the project locally, one can install the required libraries using the provided command in the command prompt. The Streamlit command "streamlit run app.py" can then be used to launch the application.
 ```bash
 streamlit run app.py 
