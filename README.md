@@ -11,39 +11,29 @@
 # Description of The Project:
 <h3><b>Business Objective of the project</b></h3>
 
-- The fundamental goal here is to model the CO2 emissions as a function of several car engine features.
-  
-- We have to use the data to estimate how much CO2 a car will emit.
+- The primary objective of the project is to develop a model that can accurately predict CO2 emissions based on different engine features of cars. 
+
+- The goal is to estimate the amount of CO2 a car will emit using the provided data.
 
 # Description of The Data?
 
-- I collected this data from the Canadian Government's Official [website](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6).
+- The data used in the project was collected from the Canadian Government's Official [website](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6).
 
 ## About Data 📈 
+### It includes the following attributes:
 
-- Make, car brand under study.
-  
-- Model, the specific model of the car.
-  
-- Vehicle_class, the car body type of the car.
-  
-- Engine_size, size of the car engine, in Litres.
-  
-- Cylinders, number of cylinders.
-  
-- Transmission, "A" for 'Automatic', "AM" for 'Automated manual', "AS" for 'Automatic with select shift', "AV" for 'Continuously variable', "M" for 'Manual'.
-  
-- Fuel_type, "X" for 'Regular gasoline', "Z" for 'Premium gasoline', "D" for 'Diesel', "E" for 'Ethanol (E85)', "N" for 'Natural gas'.
-  
-- Fuel_consumption_city, City fuel consumption ratings, in liters per 100 kilometers.
-  
-- Fuel_consumption_hwy, Highway fuel consumption ratings, in liters per 100 kilometers.
-  
-- Fuel_consumption_comb(l/100km), the combined fuel consumption rating (55% city, 45% highway), in L/100 km.
-  
-- Fuel_consumption_comb(mpg), the combined fuel consumption rating (55% city, 45% highway), in miles per gallon (mpg).
-  
-- Co2_emissions, the tailpipe emissions of carbon dioxide for combined city and highway driving, in grams per kilometer.
+- <b>Make:</b> Car brand under study.
+- <b>Model:</b> Specific model of the car.
+- <b>Vehicle_class:</b> Car body type.
+- <b>Engine_size:</b> Size of the car engine in liters.
+- <b>Cylinders:</b> Number of cylinders.
+- <b>Transmission:</b> Type of transmission (e.g., automatic, manual).
+- <b>Fuel_type:</b> Type of fuel used by the car.
+- <b>Fuel_consumption_city:</b> City fuel consumption ratings in liters per 100 kilometers.
+- <b>Fuel_consumption_hwy:</b> Highway fuel consumption ratings in liters per 100 kilometers.
+- <b>Fuel_consumption_comb(l/100km):</b> Combined fuel consumption rating (city and highway) in L/100 km.
+- <b>Fuel_consumption_comb(mpg):</b> Combined fuel consumption rating in miles per gallon (mpg).
+- <b>Co2_emissions:</b> Tailpipe emissions of carbon dioxide for combined city and highway driving, in grams per kilometer.
 
 
 # Libraries and Language that I used in the project. 
