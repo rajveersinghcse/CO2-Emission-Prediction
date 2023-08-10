@@ -6,7 +6,7 @@
 ![Banner](https://github.com/rajveersinghcse/rajveersinghcse/blob/master/img/CO2_emissions.jpg)
 
 <h3>Hey Folks,👨🏻‍💻</h3>
-<p>I have created a project for <b>CO2 Emission Prediction</b>b> by vehicles that can predict the CO2 emission of a vehicle. Here I used the CO2 emission data of the car. I used that data to estimate how much CO2 a car is going to emit. I did this project during my internship.</p>
+<p>I have created a project for <b>"CO2 Emission Prediction by Cars "</b>that can predict the CO2 emission of a vehicle. Here I used the CO2 emission data of the car. I used that data to estimate how much CO2 a car is going to emit. I did this project during my internship.</p>
 
 # Description of The Project:
 <h3><b>Business Objective of the project</b></h3>
